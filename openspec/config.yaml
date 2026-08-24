@@ -1,0 +1,22 @@
+schema: spec-driven-with-adr
+
+context: |
+  Proyecto: {{PROJECT_NAME}}
+  Stack: {{STACK_SUMMARY}}
+  Domain: {{DOMAIN_SUMMARY}}
+  Arquitectura: DDD táctico + Clean Architecture
+  Package base: {{PACKAGE_BASE}}
+
+rules:
+  proposal:
+    - Máximo 250 palabras
+    - Incluir sección de Capacidades mapeadas al dominio DDD (agregados, VOs, eventos)
+  specs:
+    - Usar lenguaje ubicuo del dominio
+    - Escenarios GIVEN/WHEN/THEN en lenguaje de negocio
+  design:
+    - Alinear con la arquitectura DDD existente (capas domain/application/infrastructure)
+    - Respetar reglas: AppService recibe DTOs con primitivos, no objetos de dominio
+    - Incluir diagramas C4 en Mermaid syntax para visualizar arquitectura cuando sea relevante (Context → Container → Component)
+  tasks:
+    - Desglosar por capa DDD: domain → application → infrastructure → tests

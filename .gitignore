@@ -1,0 +1,72 @@
+# Build artifacts
+build/
+dist/
+target/
+*.jar
+*.war
+*.ear
+
+# Gradle
+.gradle/
+gradlew
+gradlew.bat
+
+# Maven
+.mvn/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Test reports
+test-results/
+coverage/
+jacoco/
+pitest/
+
+# Docker
+docker-compose.override.yml
+
+# Engram (memoria persistente - no versionar la DB local)
+.engram/engram.db*
+.engram/*.wal
+.engram/*.shm
+
+# Node modules (si hay frontend o tooling)
+node_modules/
+package-lock.json
+yarn.lock
+
+# OpenSpec changes (archivados van a main, worktrees son temporales)
+.opencode/worktrees/
+
+# Temporary files
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Secrets (nunca commitear)
+*secret*
+*credential*
+*.pem
+*.key
+*.cert
